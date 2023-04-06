@@ -4,11 +4,14 @@ const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
   try {
+
+    const { meal_type, meal, number_of_calories, user_id } = req.body;
+
     const newCalorie = await Calorie.create({
-      meal_type: calorie.meal_type,
-      meal: calorie.meal,
-      number_of_calories: calorie.number_of_calories,
-      user_id: calorie.user_id
+      meal_type: meal_type,
+      meal: meal,
+      number_of_calories: number_of_calories,
+      user_id: user_id
     });
 
     res.status(200).json(newCalorie);
@@ -27,7 +30,7 @@ router.delete('/:id', withAuth, async (req, res) => {
     });
 
     if (!calorieData) {
-      res.status(404).json({ message: 'No calorie count with this id! '});
+      res.status(404).json({ message: 'No calorie count with this id!' });
       return;
     }
 

@@ -20,7 +20,7 @@ Calorie.init(
       allowNull: false,
     },
     number_of_calories: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     user_id: {
