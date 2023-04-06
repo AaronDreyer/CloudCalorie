@@ -31,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/AaronDreyer/CloudCalorie/issues"
   },
-  "homepage": "https://github.com/AaronDreyer/CloudCalorie#readme"
+  "homepage": "https://github.com/AaronDreyer/CloudCalorie#readme",
+  "keywords": []
 }
