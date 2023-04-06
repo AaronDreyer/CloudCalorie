@@ -1,9 +1,8 @@
 const router = require('express').Router();
-
-const userRoutes = require('./user-routes');
-const calorieRoutes = require('./calorie-routes');
+const userRoutes = require('./userRoutes');
+const profileRoutes = require('./profileRoutes');
 
 router.use('/users', userRoutes);
-router.use('/calories', calorieRoutes);
+router.use('/profiles', profileRoutes);
 
 module.exports = router;
