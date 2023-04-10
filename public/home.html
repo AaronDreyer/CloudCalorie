@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CloudCalorie Homepage</title>
+	<link rel="stylesheet" href="home.css">
+</head>
+<body>
+	<header>
+		<img src="/assets/cloud.png" alt="CloudCalorie">
+		<button id="logout-btn">Log Out</button>
+	</header>
+
+	<div id="banner">
+        <img src="/assets/Home-banner.jpeg" alt="Banner Image">
+        <div class="banner-content">
+        <h1>Welcome to CloudCalorie</h1>
+        </div>
+    </div>
+
+	<section id="app-description">
+		<p>Create a new entry below to get started.</p>
+		<p>OR</p>
+		<p>Select a previous entry to pick back up where you left off.</p>
+	</section>
+
+	<section class="input-section">
+		<label for="date-input">Date:</label>
+		<input type="date" id="date-input" name="date-input">
+		<label for="desc-input">Description:</label>
+		<input type="text" id="desc-input" name="desc-input">
+		<button id="create-btn">Create</button>
+	</section>
+
+	<section class="output-section">
+		<!-- Populated date and description inputs will appear here -->
+	</section>
+	  
+    <footer>
+    <p>2023 CloudCalorie</p>
+    </footer>   
+
+	<script src="home.js"></script>
+</body>
+</html>
