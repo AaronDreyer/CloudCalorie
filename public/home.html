@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Website</title>
-	<link rel="stylesheet" type="text/css" href="home.css">
+	<title>CloudCalorie Homepage</title>
+	<link rel="stylesheet" href="home.css">
 </head>
 <body>
 	<header>
-		<img src="/assets/cloud.png" alt="Brand Logo">
+		<img src="/assets/cloud.png" alt="CloudCalorie">
 		<button id="logout-btn">Log Out</button>
 	</header>
 
-	<section class="hero-banner">
-		<h1>Welcome to CloudCalorie</h1>
+	<div id="banner">
+        <img src="/assets/Home-banner.jpeg" alt="Banner Image">
+        <div class="banner-content">
+        <h1>Welcome to CloudCalorie</h1>
+        </div>
+    </div>
+
+	<section id="app-description">
 		<p>Create a new entry below to get started.</p>
 		<p>OR</p>
 		<p>Select a previous entry to pick back up where you left off.</p>
@@ -30,7 +36,7 @@
 	</section>
 	  
     <footer>
-        <p>CloudCalorie</p>
+    <p>2023 CloudCalorie</p>
     </footer>   
 
 	<script src="home.js"></script>
