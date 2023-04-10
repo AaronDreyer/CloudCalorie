@@ -1,5 +1,4 @@
 /* Global Styles */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -41,9 +40,6 @@ main {
   margin: 0 auto;
 }
 
-/* Header Styles */
-
-/* Styles for header */
 header {
 	display: flex;
 	justify-content: space-between;
@@ -65,21 +61,18 @@ header img {
 	cursor: pointer;
 }
 
-/* App Description Styles */
-
 #app-description {
   text-align: center;
   padding: 20px;
 }
 
-/* Input Section Styles */
 
 #input-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Add this line to center vertically */
-  text-align: center; /* Add this line to center horizontally */
+  justify-content: center; 
+  text-align: center;
   padding: 20px;
 }
 
