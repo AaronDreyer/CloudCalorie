@@ -147,3 +147,94 @@ footer {
   justify-content: center;
   margin-top: 20px;
 }
+
+<table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Food</th>
+      <th>Serving Size</th>
+      <th>Calories</th>
+      <th>?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dave Gamache</td>
+      <td>26</td>
+      <td>Male</td>
+      <td>San Francisco</td>
+    </tr>
+    <tr>
+      <td>Dwayne Johnson</td>
+      <td>42</td>
+      <td>Male</td>
+      <td>Hayward</td>
+      <tr>
+      <td>Dave Gamache</td>
+      <td>26</td>
+      <td>Male</td>
+      <td>San Francisco</td>
+    </tr>
+    <tr>
+      <td>Dwayne Johnson</td>
+      <td>42</td>
+      <td>Male</td>
+      <td>Hayward</td>
+      <tr>
+      <td>Dave Gamache</td>
+      <td>26</td>
+      <td>Male</td>
+      <td>San Francisco</td>
+    </tr>
+    <tr>
+      <td>Dwayne Johnson</td>
+      <td>42</td>
+      <td>Male</td>
+      <td>Hayward</td>
+      <tr>
+      <td>Dave Gamache</td>
+      <td>26</td>
+      <td>Male</td>
+      <td>San Francisco</td>
+    </tr>
+    <tr>
+      <td>Dwayne Johnson</td>
+      <td>42</td>
+      <td>Male</td>
+      <td>Hayward</td>
+      <tr>
+      <td>Dave Gamache</td>
+      <td>26</td>
+      <td>Male</td>
+      <td>San Francisco</td>
+    </tr>
+    <tr>
+      <td>Dwayne Johnson</td>
+      <td>42</td>
+      <td>Male</td>
+      <td>Hayward</td>
+      <tr>
+      <td>Dave Gamache</td>
+      <td>26</td>
+      <td>Male</td>
+      <td>San Francisco</td>
+    </tr>
+    <tr>
+      <td>Dwayne Johnson</td>
+      <td>42</td>
+      <td>Male</td>
+      <td>Hayward</td>
+      <tr>
+      <td>Dave Gamache</td>
+      <td>26</td>
+      <td>Male</td>
+      <td>San Francisco</td>
+    </tr>
+    <tr>
+      <td>Dwayne Johnson</td>
+      <td>42</td>
+      <td>Male</td>
+      <td>Hayward</td>
+    </tr>
+  </tbody>
+</table>
