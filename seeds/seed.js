@@ -12,9 +12,9 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  for (const Calorie of calorieData) {
+  for (const calorie of calorieData) {
     await Calorie.create({
-      ...Calorie,
+      ...calorie,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
