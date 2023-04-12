@@ -17,7 +17,7 @@ Calorie.init(
     },
     meal: {
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
     },
     number_of_calories: {
       type: DataTypes.STRING,

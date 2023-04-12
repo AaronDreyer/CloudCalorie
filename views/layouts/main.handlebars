@@ -9,11 +9,13 @@
 <body>
 	<header>
 		<img src="/assets/cloud.png" alt="CloudCalorie">
-        {{!-- {{#if logged_in}} --}}
+        {{#if logged_in}}
+        <a href="/profile">Profile</a>
 		<button id="logout-btn">Log Out</button>
-        {{!-- {{else}}
-        <button id="logout-btn">Log In</button> --}}
-        {{!-- {{/if}} --}}
+        {{else}}
+        <a href="/login" id="logout-btn">Log in</a>
+        {{!-- <button id="logout-btn">Log In</button> --}}
+        {{/if}}
 	</header>
 
 	<div id="banner">
@@ -29,7 +31,11 @@
 	  
     <footer>
     <p>2023 CloudCalorie</p>
-    </footer>   
+    </footer> 
+
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}  
 
 	{{#if logged_in}}
     <script src="/js/home.js"></script>
