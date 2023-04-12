@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CloudCalorie Homepage</title>
 	<link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/login.css">
@@ -8,13 +11,13 @@
 </head>
 <body>
 	<header>
-		<img src="/assets/cloud.png" alt="CloudCalorie">
+		{{!-- <img src="/assets/cloud.png" alt="CloudCalorie"> --}}
         {{#if logged_in}}
         <a href="/profile">Profile</a>
 		<button id="logout-btn">Log Out</button>
         {{else}}
-        <a href="/login" id="logout-btn">Log in</a>
-        {{!-- <button id="logout-btn">Log In</button> --}}
+        {{!-- <a href="/login" id="logout-btn">Log in</a>
+        <button id="logout-btn">Log In</button> --}}
         {{/if}}
 	</header>
 
@@ -42,7 +45,7 @@
     {{/if}}
 
     {{#if logged_in}}
-    <script src="/js/login.js"></script>
+    <script src="/public/js/login.js"></script>
     {{/if}}
 
     {{#if logged_in}}
