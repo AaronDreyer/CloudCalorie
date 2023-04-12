@@ -1,0 +1,52 @@
+<section id="app-description">
+    <p>Enter the details of each meal below to track your daily calorie intake.</p>
+</section>
+
+<section class="input-section">
+    <form id="calorie-form">
+        <div class="input-row">
+            <label for="meal-type">Meal Type:</label>
+            <select id="meal-type">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="snack">Snack</option>
+                <option value="dinner">Dinner</option>
+            </select>
+        </div>
+
+        <div class="input-row">
+            <label for="meal-name">Meal Name:</label>
+            <br>
+            <input type="text" id="meal-name">
+        </div>
+
+        <div class="input-row">
+            <label for="calories">Number of Calories:</label>
+            <input type="number" id="calories">
+        </div>
+
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+</section>
+<br>
+
+<section class="calorie-log"></section>        
+    <table>
+        <thead>
+            <tr>
+                <th>Meal Type</th>
+                <th>Meal Name</th>
+                <th>Calories</th>
+            </tr>
+        </thead>
+        <tbody id="log-body">
+            <!-- rows will be added dynamically by JavaScript code -->
+        </tbody>
+    </table>
+</section>        
+<br>
+
+<section class="calorie-count">
+    <h2>Total Calorie Count:</h2>
+    <p id="calorie-count">0</p>
+</section>

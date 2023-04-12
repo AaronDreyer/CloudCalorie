@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CloudCalorie Homepage</title>
+	<link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+	<header>
+		<img src="/assets/cloud.png" alt="CloudCalorie">
+        {{#if logged_in}}
+		<button id="logout-btn">Log Out</button>
+        {{else}}
+        <button id="logout-btn">Log In</button>
+        {{/if}}
+	</header>
+
+	<div id="banner">
+        <img src="/assets/Home-banner.jpeg" alt="Banner Image">
+        <div class="banner-content">
+        <h1>Welcome to CloudCalorie</h1>
+        </div>
+    </div>
+
+	<main>
+        {{{ body }}}
+    </main>
+	  
+    {{!-- <footer>
+    <p>2023 CloudCalorie</p>
+    </footer>   
+
+	{{#if logged_in}}
+    <script src="../js/home.js"></script>
+    {{/if}} --}}
+
+</body>
+</html>
