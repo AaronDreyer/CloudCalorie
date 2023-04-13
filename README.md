@@ -1,4 +1,3 @@
-# CloudCalorie
 # CloudCalorie 
   ## Description
   CloudCalorie allows you to easily track your daily calorie intake. Not only will CloudCalorie track your calorie intake by meal, but it will also let you know the total number of calories eaten that day. 
@@ -11,6 +10,7 @@
   - [Contribution Guidelines](#contributionguidelines)
   - [Tests](#tests)
   - [User Story](#UserStory)
+  - [Screenshots](#Screenshots)
   - [Acceptance Criteria](#AcceptanceCriteria)
   - [Contact Us](#contactinfo)
   
@@ -51,6 +51,14 @@ SOFTWARE.
 
 ## UserStory
   CloudCalorie allows you to create an encrypted account and sign in, in under 30 sec. Not only is it quick and easy to navigate, but our app also provides calorie resources. Such as, how many calories are in common foods. 
+
+## Screenshots
+
+![Image](./public/assets/localhost_3001_login.png)
+
+![Image](./public/assets/localhost_3001_homepage.png)
+
+![Image](./public/assets/localhost_3001_calorie.png)
 
 ## AcceptanceCriteria
   Application uses a Node and Express back end and uses both GET and POST routes for retrieving and adding new data.pplication has a folder structure that meets the MVC paradigm and uses Handlebars.js as the template engine.Application is backed by a MySQL database with a Sequelize ORM and protects API keys and sensitive information with environment variables.Application includes user authentication (express-session and cookies).Application uses at least one new library, package, or technology not covered in class.
