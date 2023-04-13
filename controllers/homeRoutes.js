@@ -1,9 +1,9 @@
 const router = require('express').Router();
 // Need connection.js in config
 const { Calorie, User } = require('../models');
-// const withAuth = require('../utils/auth');
+const withAuth = require('../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get('/homepage', async (req, res) => {
   try {
     const calorieData = await Calorie.findAll({
       include: [
@@ -25,60 +25,25 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/calorie', async (req, res) => {
+router.get('/calorie', withAuth, async (req, res) => {
   try {
-    // const calorieData = await Calorie.findByPk(req.params.id, {
-    //   include: [
-    //     {
-    //       model: User,
-    //       attributes: ['name'],
-    //     },
-    //     // {
-    //     //   model: Calorie,
-    //     //   attributes: [''],
-    //     // },
-    //   ],
-    // });
-    // console.log(projectData)
-    // const calorie = calorieData.get({ plain: true });
-    console.log('made it to calories');
+    // Render the calorie.handlebars view
     res.render('calorie', {
-      // ...calorie,
-      // logged_in: req.session.logged_in
+      logged_in: true
     });
   } catch (err) {
-    res.status(500).json(err);
+    // Render the calorie.handlebars view with a 500 status code on error
+    res.status(500).render('calorie');
   }
 });
 
-// router.get('/profile', withAuth, async (req, res) => {
-//   try {
-//     const userData = await User.findByPk(req.session.user_id, {
-//       attributes: { exclude: ['password'] },
-//       include: [{ model: Calorie }],
-//     });
-
-//     const user = userData.get({ plain: true });
-
-//     res.render('profile', {
-//       ...user,
-//       logged_in: true
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
-    res.redirect('/profile');
+    res.redirect('/homepage');
     return;
   }
 
   res.render('login');
 });
-
-
-
 
 module.exports = router;
