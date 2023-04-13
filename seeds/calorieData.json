@@ -1,0 +1,23 @@
+[
+    {
+      "id": 20223,
+      "name": "Slice of Pepperoni Pizza",
+      "meal_type": "Dinner", 
+      "number_of_calories": 300 
+      
+    },
+    {
+      "id": 20332,
+     "name": "1 Cup of Oatmeal",
+     "meal_type": "Breakfast", 
+     "number_of_calories": 158
+        
+    },
+    {
+      "id": 207552,
+      "name": "Apple",
+      "meal_type": "Snack", 
+      "number_of_calories": 100
+        
+    }
+  ]
