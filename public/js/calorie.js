@@ -1,3 +1,6 @@
+
+// This code was supposed to be the applicatiosn ability to save to the database and dsiplay the indiviudal entries and calorie counter on the HTML. It did operate correctly then I merged with main. AFter that the /api/calories endpoint would not function
+
 // document.getElementById('calorie-form').addEventListener('submit', async (event) => {
 //   event.preventDefault(); // prevent form submission
 
