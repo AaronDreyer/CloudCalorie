@@ -2,12 +2,16 @@ const router = require('express').Router();
 const { Calorie } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.post('/', async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
   try {
+
+    const userId = req.session.user_id;
+
     const newCalorie = await Calorie.create({
       meal_type: req.body.meal_type,
       meal: req.body.meal,
       number_of_calories: req.body.number_of_calories,
+      user_id: userId,
     });
     console.log(newCalorie);
 
@@ -17,17 +21,6 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.get('/', withAuth, async (req, res) => {
-  try {
-    // Fetch all calorie information from the database
-    const calories = await Calorie.findAll();
-
-    // Send the fetched calorie information as response
-    res.status(200).json(calories);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
 
 
 module.exports = router;

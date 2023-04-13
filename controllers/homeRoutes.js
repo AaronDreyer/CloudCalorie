@@ -27,12 +27,10 @@ router.get('/homepage', async (req, res) => {
 
 router.get('/calorie', withAuth, async (req, res) => {
   try {
-    // Render the calorie.handlebars view
     res.render('calorie', {
       logged_in: true
     });
   } catch (err) {
-    // Render the calorie.handlebars view with a 500 status code on error
     res.status(500).render('calorie');
   }
 });
