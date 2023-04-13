@@ -35,6 +35,11 @@ router.get('/calorie', withAuth, async (req, res) => {
   }
 });
 
+router.get('/', async (req, res) => {
+  // Redirect to the login page
+  res.redirect('/login');
+});
+
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/homepage');
