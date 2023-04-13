@@ -11,14 +11,8 @@
 </head>
 <body>
 	<header>
-		{{!-- <img src="/assets/cloud.png" alt="CloudCalorie"> --}}
-        {{#if logged_in}}
-        <a href="/profile">Profile</a>
-		<button id="logout-btn">Log Out</button>
-        {{else}}
-        {{!-- <a href="/login" id="logout-btn">Log in</a>
-        <button id="logout-btn">Log In</button> --}}
-        {{/if}}
+		<img src="/assets/cloud.png" alt="CloudCalorie">
+
 	</header>
 
 	<div id="banner">
@@ -31,14 +25,10 @@
 	<main>
         {{{ body }}}
     </main>
-	  
-    <footer>
-    <p>2023 CloudCalorie</p>
-    </footer> 
 
-    {{#if logged_in}}
+    {{!-- {{#if logged_in}}
     <script src="/js/logout.js"></script>
-    {{/if}}  
+    {{/if}}   --}}
 
 	{{#if logged_in}}
     <script src="/js/home.js"></script>
@@ -51,6 +41,10 @@
     {{#if logged_in}}
     <script src="/js/calorie.js"></script>
     {{/if}}
+
+    <footer>
+    <p>2023 CloudCalorie</p>
+    </footer> 
 
 </body>
 </html>

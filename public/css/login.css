@@ -16,20 +16,17 @@ header {
     margin-top: 50px;
   }
 
-  body {
+  /* body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  } */
+
+  .bgClouds{
     background-image: url('/assets/CloudHero.gif');
     background-size: cover;
-  }
-
-  .container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
   }
   
   section {

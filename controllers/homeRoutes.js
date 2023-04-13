@@ -27,16 +27,16 @@ router.get('/', async (req, res) => {
 
 router.get('/calorie', async (req, res) => {
   try {
-    // const calorieData = await Calorie.findByPk(req.params.id, {
+    // const calorieData = await Calorie.findAll(req.params.id, {
     //   include: [
     //     {
     //       model: User,
     //       attributes: ['name'],
     //     },
-    //     // {
-    //     //   model: Calorie,
-    //     //   attributes: [''],
-    //     // },
+    //     {
+    //       model: Calorie,
+    //       attributes: [''],
+    //     },
     //   ],
     // });
     // console.log(projectData)
