@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Calorie } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+
 router.post('/', withAuth, async (req, res) => {
   try {
 
@@ -20,7 +21,5 @@ router.post('/', withAuth, async (req, res) => {
     res.status(400).json(err);
   }
 });
-
-
 
 module.exports = router;
