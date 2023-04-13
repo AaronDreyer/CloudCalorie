@@ -13,22 +13,15 @@ Calorie.init(
     },
     meal_type:{
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
     },
     meal: {
       type: DataTypes.STRING,
       // allowNull: false,
     },
     number_of_calories: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    user_id: {
       type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
+      allowNull: false,
     },
   },
   {
